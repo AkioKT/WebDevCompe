@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Eczar:wght@400..800&family=Hind:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Eczar:wght@400..800&family=Hind:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --maincolor: #f0f0d7;
+  --fonttext: #727d73;
+  --footercolor: #bebea3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--maincolor);
+  color: var(--fonttext);
+  font-family: "Poppins", sans-serif;
+}
+
+.container1 {
+  width: 100%;
+  /* padding: 0 1rem; */
+}
+
+.container2 {
+  display: none;
+}
+
+.storename {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--fonttext);
+}
+
+.storename1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+}
+
+.storename1 svg {
+  width: 1.8rem;
+}
+
+.storename1 img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.storename1 a {
+  display: grid;
+  text-decoration: none;
+  color: var(--fonttext);
+}
+
+.rating {
+  display: grid;
+  align-items: center;
+}
+
+.rating h1 {
+  font-size: 12px;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin-left: 2px;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  cursor: pointer;
+  color: #ffd700;
+  transition: color 0.2s;
+  margin-right: 2px;
+  /* text-shadow: 1px 1px 0 #000000; */
+}
+
+.star-rating label:before {
+  content: "★";
+}
+
+.star-rating input:checked ~ label {
+  color: #ffd700;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #ffed85;
+}
+
+.linefooter {
+  width: 100%;
+  height: 1px;
+  background-color: var(--fonttext);
+}
+
+.imageproduct {
+  display: grid;
+  width: 100%;
+  gap: 5px;
+  padding: 0.5rem 1rem;
+}
+
+.imageproduct1 {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+.imageproduct1 img {
+  width: 16rem;
+  border-radius: 5px;
+}
+
+.imageproduct2 {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.imageproduct2 img {
+  width: 3.75rem;
+  border-radius: 5px;
+}
+
+.productreview {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.productreview1 {
+  display: grid;
+  padding-top: 0.5rem;
+}
+
+.productreview1 h1 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.productreview1 p {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.productreview2 {
+  padding-top: 1rem;
+}
+
+.storerating {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.storerating h4 {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.descofitems p {
+  font-size: 12px;
+  text-align: justify;
+}
+
+.productreview3 {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 1rem 0;
+}
+
+.descofitem1 p,
+.descofitem2 p {
+  font-size: 12px;
+}
+
+.commentreview {
+  width: 100%;
+  display: grid;
+  gap: 5px;
+  padding: 1rem 0;
+}
+
+.commentreviewuser {
+  display: flex;
+  gap: 5px;
+}
+
+.usernameandreview h1 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.usernameandreview p {
+  font-size: 11px;
+}
+
+.profileuser img {
+  width: 2rem;
+}
+
+.btnbuyandcart {
+  width: 100%;
+  display: grid;
+  gap: 5px;
+  padding: 0 1rem;
+}
+
+.btnbuyandcart button {
+  padding: 0.7rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.buy {
+  background-color: var(--fonttext);
+  color: var(--maincolor);
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+}
+
+.addtocart {
+  background-color: var(--maincolor);
+  color: var(--fonttext);
+  font-size: 14px;
+  font-weight: 600;
+  border: 1.5px solid var(--fonttext);
+}
+
+@media (min-width: 768px) {
+  .container1 {
+    display: none;
+  }
+  .container2 {
+    /* padding: 0 1rem; */
+    display: block;
+  }
+  .storename1 svg {
+    width: 2rem;
+  }
+  .storename1 img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .storename1 a {
+    text-decoration: none;
+    color: var(--fonttext);
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .rating h1 {
+    font-size: 18px;
+  }
+  .containerleftandright {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 1rem;
+  }
+  .containerleft {
+    /* width: 100%; */
+  }
+  .mainitems img {
+    width: 14rem;
+    border-radius: 6px;
+  }
+  .listitems img {
+    width: 3.3rem;
+    border-radius: 4px;
+  }
+  .buttonbuyandcart {
+    display: grid;
+    gap: 5px;
+  }
+  .buttonbuyandcart button {
+    padding: 0.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .buttonbuyandcart .buy:hover {
+    background-color: #5f6860;
+  }
+  .buttonbuyandcart .addtocart:hover {
+    background-color: #d7d7ce;
+  }
+  .productreview1 {
+    padding: 0;
+  }
+  .productreview1 h1 {
+    font-size: 22px;
+  }
+  .productreview1 p {
+    font-size: 18px;
+  }
+  .storerating h4,
+  .descofitems p,
+  .descofitem1 p,
+  .descofitem2 p,
+  .usernameandreview p {
+    font-size: 15px;
+  }
+  .star-rating label {
+    font-size: 25px;
+  }
+  .profileuser img {
+    width: 3rem;
+  }
+  .commentreviewuser {
+    gap: 15px;
+  }
+  .commentreviewuser p {
+    text-align: justify;
+  }
+}
+
+/* @media (min-width: 1099px) {
+  .storename1 a {
+    text-decoration: none;
+    color: var(--fonttext);
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .rating h1 {
+    font-size: 18px;
+  }
+  .storename1 img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .mainitems img {
+    width: 15rem;
+  }
+  .listitems img {
+    width: 56.8px;
+  }
+  .productreview1 h1 {
+    font-size: 25px;
+  }
+  .productreview1 p {
+    font-size: 20px;
+  }
+  .storerating h4,
+  .descofitems p,
+  .descofitem1 p,
+  .descofitem2 p,
+  .usernameandreview p {
+    font-size: 18px;
+  }
+  .star-rating label {
+    font-size: 28px;
+  }
+  .profileuser img {
+    width: 4rem;
+  }
+} */

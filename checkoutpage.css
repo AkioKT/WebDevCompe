@@ -1,0 +1,867 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Eczar:wght@400..800&family=Hind:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Eczar:wght@400..800&family=Hind:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --maincolor: #f0f0d7;
+  --fonttext: #727d73;
+  --footercolor: #bebea3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--maincolor);
+  color: var(--fonttext);
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  /* border-bottom: 1.5px solid var(--fonttext); */
+  box-shadow: 1px 1px 10px #00000050;
+}
+
+.header_1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--maincolor);
+  position: relative;
+  padding: 0.8rem 1rem;
+}
+
+.header_1 .logo {
+  width: 4.5rem;
+}
+
+.nav {
+  width: 100%;
+}
+
+.ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+  background-color: var(--maincolor);
+  box-shadow: 0 2px 5px grey;
+}
+
+.ul li {
+  padding: 1rem;
+  background-color: var(--maincolor);
+  border-bottom: 0.1px solid #727d735b;
+}
+
+li a {
+  text-decoration: none;
+  padding-right: 60vw;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 15px;
+  color: var(--fonttext);
+}
+
+li a:hover {
+  color: #202020;
+}
+
+.register {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
+.account {
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: none;
+  width: 100vw 0;
+  background-color: var(--fonttext);
+  color: var(--maincolor);
+  text-align: center;
+}
+
+.account:hover {
+  animation: 1s;
+}
+
+.userprofile {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  /* background-color: rebeccapurple; */
+}
+
+.userprofile a {
+  display: grid;
+}
+
+.userprofile img {
+  width: 3.3rem;
+}
+
+.hamburger {
+  display: none;
+  padding: 0.2rem;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  margin-top: 10px;
+  position: absolute;
+  right: 1%;
+  top: 1px;
+  z-index: 10;
+}
+
+.hamburger span {
+  display: none;
+  position: absolute;
+  height: 3px;
+  width: 80%;
+  background-color: var(--fonttext);
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+.hamburger span:nth-child(2) {
+  top: 9px;
+}
+.hamburger span:nth-child(3) {
+  top: 18px;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 9px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.header_2 {
+  width: 100vw;
+  background-color: var(--maincolor);
+}
+
+.nav_2 form {
+  display: flex;
+  padding: 0 1rem;
+}
+
+.category {
+  padding: 0.5rem 1rem;
+}
+
+select option {
+  appearance: none;
+  background-color: var(--maincolor);
+}
+
+form input {
+  border-left: none;
+  width: 100%;
+  height: 4vh;
+  border-radius: 5px;
+  border: 1.5px solid var(--fonttext);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: none;
+  padding: 1.2rem;
+  background-color: var(--maincolor);
+}
+
+input[type="search"]:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1.5px solid var(--fonttext);
+  border-left: none;
+  padding-left: 21px;
+}
+
+.header_2 ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+
+form button {
+  border: none;
+  background-color: var(--maincolor);
+}
+
+select {
+  border: none;
+  background-color: var(--basiccolor);
+}
+
+.header_2 .ul {
+  display: flex;
+  justify-content: center;
+}
+
+.auth-buttons {
+  width: 150px;
+  border: solid 1.5px black;
+  border-radius: 15px;
+}
+
+.auth-buttons a {
+  margin: 0.5rem;
+  text-decoration: none;
+  color: var(--fonttext);
+}
+
+.nav_2 a {
+  text-decoration: none;
+  padding: 0.5rem;
+  color: var(--fonttext);
+}
+
+.limits {
+  padding-bottom: 60px;
+}
+
+.linefooter,
+.linefootermessageexpeditionpayment {
+  width: 100%;
+  height: 1.4px;
+  background-color: var(--fonttext);
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  padding: 1rem;
+}
+
+.customerbiodata {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 0.5rem;
+}
+
+.customerbiodata h1,
+.customerbiodata p,
+.customerbiodata a,
+.expeditionname p,
+.priceshipping p,
+.priceshipping a,
+.voucher2 p,
+.voucher2 a,
+.descofitems1 p,
+.totalproduct1 p,
+.changebiodata a {
+  font-size: 9px;
+}
+
+.totalproduct1 h1,
+.descofitems1 h1,
+.message h1,
+.expeditionname h1,
+.payment1 h1,
+.storename h1,
+.voucher1 h1 {
+  font-size: 13px;
+}
+
+.customerbiodata1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.customeraddress {
+  width: 40vw;
+}
+
+.changebiodata a,
+.priceshipping a,
+.voucher a {
+  text-decoration: none;
+  color: var(--fonttext);
+  font-weight: 700;
+}
+
+.displayitems {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.descofitems {
+  display: flex;
+  gap: 10px;
+}
+
+.descofitems img {
+  width: 4.5rem;
+  border-radius: 4px;
+}
+
+.descofitems1 {
+  display: flex;
+  gap: 20px;
+}
+
+.descofitems h1 {
+  padding-top: 1.3rem;
+}
+
+.message {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.message1 {
+  padding: 0.3rem 0;
+}
+
+.message2 {
+  width: 100%;
+}
+
+.message2 textarea {
+  background-color: var(--maincolor);
+  border: 1px solid var(--fonttext);
+  height: 100px;
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  padding: 3px;
+  resize: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.message textarea::placeholder {
+  color: gray;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+}
+
+.message textarea:hover {
+  transform: scale(1.01);
+  transition: transform 0.5s;
+}
+
+.message textarea:focus {
+  outline: none;
+  border: 1.5px solid var(--fonttext);
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.326);
+}
+
+.expedition {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.expeditionname {
+  display: grid;
+}
+
+.priceshipping {
+  display: flex;
+  justify-content: space-between;
+}
+
+.priceshipping p,
+.priceshipping a {
+  text-decoration: none;
+  color: var(--fonttext);
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  padding: 0.5rem 0 1rem 0;
+}
+
+.payment2 {
+  display: grid;
+  gap: 8px;
+}
+
+/* Sembunyikan radio button default */
+input[type="radio"] {
+  display: none;
+}
+
+/* Styling tombol label untuk radio */
+input[type="radio"] + label {
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 16px;
+  border: 1px solid var(--fonttext);
+  background-color: var(--maincolor);
+  color: var(--fonttext);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efek saat radio dipilih */
+input[type="radio"]:checked + label {
+  background-color: var(--fonttext);
+  color: var(--maincolor);
+  transform: scale(1.05);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover efek */
+input[type="radio"] + label:hover {
+  background-color: var(--fonttext);
+  color: var(--maincolor);
+  opacity: 0.8;
+}
+
+/* Styling untuk select agar menyerupai tombol */
+.select-wrapper {
+  display: inline-block;
+  height: 1.5rem;
+  position: relative;
+}
+
+.select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: var(--maincolor);
+  color: #727d73;
+  font-size: 16px;
+  border: 1px solid var(--fonttext);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  position: relative;
+}
+
+/* Tambahkan panah dropdown kustom */
+.select-wrapper::after {
+  content: "▼";
+  font-size: 10px;
+  color: var(--fonttext);
+  position: absolute;
+  top: 12px;
+  left: 4px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.select-wrapper:hover::after,
+.select-wrapper:focus-within::after {
+  color: var(--maincolor);
+  left: 3px;
+}
+
+/* Efek saat opsi dipilih */
+.select-wrapper select:focus {
+  background-color: var(--fonttext);
+  color: var(--maincolor);
+  scale: 1.05;
+}
+
+/* Hover efek */
+.select-wrapper select:hover {
+  opacity: 0.8;
+  color: var(--maincolor);
+}
+
+.payment2 button:active {
+  background-color: var(--maincolor);
+  color: var(--fonttext);
+}
+
+select {
+  /* width: 200px; */
+  padding: 0.1rem 1rem;
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: var(--fonttext);
+  border: 1px solid var(--fonttext);
+  color: var(--maincolor);
+  cursor: pointer;
+}
+
+select:hover {
+  background-color: #727d73;
+}
+
+select:focus {
+  outline: none;
+  /* border-color: #2980b9; */
+}
+
+option {
+  appearance: none;
+  color: var(--fonttext);
+  font-family: "Poppins", sans-serif;
+  border: 1px solid var(--fonttext);
+}
+
+.voucher {
+  width: 100%;
+  padding: 0 0 0.5rem 0;
+}
+
+.voucher2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.voucher2 p,
+.voucher2 a {
+  text-decoration: none;
+  color: var(--fonttext);
+}
+
+.totalproduct {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.totalproduct1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirmproduct {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: end;
+}
+
+.confirmproduct button {
+  padding: 0.5rem 1rem;
+  background-color: var(--fonttext);
+  color: var(--maincolor);
+  font-weight: 600;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.confirmproduct button:hover {
+  background-color: #676c68;
+}
+
+.confirmproduct button:active {
+  background-color: var(--maincolor);
+  color: var(--fonttext);
+}
+
+/* CONTAINER END */
+
+/* RESPONSIVE*/
+@media (min-width: 300px) {
+  .hamburger {
+    right: 1%;
+  }
+}
+@media (min-width: 320px) {
+  .hamburger {
+    right: 1%;
+  }
+
+  .invitation_sentence h1 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 330px) {
+  .hamburger {
+    right: 1%;
+  }
+}
+@media (min-width: 340px) {
+  .hamburger {
+    right: 1%;
+  }
+}
+@media (min-width: 350px) {
+  .hamburger {
+    right: 1%;
+  }
+}
+/* @media (min-width: 359px) {
+    .invitation_sentence h1 {
+      font-size: 20px;
+    }
+  } */
+
+@media (min-width: 360px) {
+  .hamburger {
+    right: 1%;
+  }
+  .invitation_sentence h1 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 370px) {
+  .hamburger {
+    right: 1%;
+  }
+  .invitation_sentence h1 {
+    font-size: 23px;
+  }
+}
+@media (min-width: 400px) {
+  .hamburger {
+    right: 1%;
+  }
+  .invitation_sentence h1 {
+    font-size: 25px;
+  }
+  .closing h1 {
+    font-size: 13px;
+  }
+}
+@media (min-width: 470px) {
+  .closing h1 {
+    font-size: 15px;
+  }
+}
+@media (min-width: 500px) {
+  .invitation_sentence h1 {
+    font-size: 27px;
+  }
+
+  .customerbiodata h1,
+  .customerbiodata p,
+  .customerbiodata a,
+  .expeditionname p,
+  .priceshipping p,
+  .priceshipping a,
+  .voucher2 p,
+  .voucher2 a,
+  .descofitems1 p,
+  .totalproduct1 p {
+    font-size: 13px;
+  }
+
+  .totalproduct1 h1,
+  .descofitems1 h1,
+  .message h1,
+  .expeditionname h1,
+  .payment1 h1,
+  .storename h1,
+  .voucher1 h1 {
+    font-size: 15px;
+  }
+  .descofitems img {
+    width: 6rem;
+  }
+
+  .descofitems h1 {
+    padding-top: 2rem;
+  }
+}
+@media (min-width: 600px) {
+  .closing h1 {
+    font-size: 16.5px;
+  }
+  .invitation_sentence h1 {
+    font-size: 33px;
+  }
+}
+@media (min-width: 700px) {
+  .closing h1 {
+    font-size: 18px;
+  }
+  .invitation_sentence h1 {
+    font-size: 38px;
+  }
+}
+@media (min-width: 750px) {
+  .closing h1 {
+    font-size: 19px;
+  }
+}
+@media (min-width: 768px) {
+  .limits {
+    padding-bottom: 65px;
+  }
+  .container1 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .header_1 {
+    padding: 0 1rem;
+  }
+  .ul {
+    box-shadow: none;
+  }
+  .ul li {
+    border-bottom: none;
+    padding: 1rem 0 1rem 1rem;
+  }
+  li a {
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .invitation_sentence {
+    padding-top: 2rem;
+  }
+  .invitation_sentence h1 {
+    font-size: 40px;
+  }
+
+  .messageexpeditionpayment {
+    display: flex;
+    justify-content: space-between;
+    gap: 3vw;
+  }
+  .linefootermessageexpeditionpayment {
+    display: none;
+  }
+  .priceshipping {
+    display: grid;
+    gap: 45px;
+  }
+  .payment2 {
+    display: flex;
+    /* width: 130px; */
+  }
+  .payment2_1 {
+    display: grid;
+    gap: 10px;
+  }
+  .payment2_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  select {
+    display: grid;
+    padding-bottom: 3px;
+  }
+}
+@media (min-width: 800px) {
+  .invitation_sentence {
+    width: 50%;
+    padding-top: 2rem;
+  }
+  .invitation_sentence h1 {
+    font-size: 35px;
+  }
+  .education h1 {
+    font-size: 22px;
+  }
+  .education p {
+    font-size: 18px;
+  }
+  .closing h1 {
+    font-size: 21px;
+  }
+}
+@media (min-width: 870px) {
+  .closing h1 {
+    font-size: 23px;
+  }
+}
+@media (min-width: 900px) {
+  .invitation_sentence {
+    width: 50%;
+    padding-top: 4rem;
+  }
+}
+@media (min-width: 940px) {
+  .education h1 {
+    font-size: 25px;
+  }
+  .education p {
+    font-size: 22px;
+  }
+  .closing h1 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1000px) {
+  .invitation_sentence {
+    width: 50%;
+    padding-top: 6rem;
+  }
+  .closing h1 {
+    font-size: 27px;
+  }
+}
+@media (min-width: 1080px) {
+  .education h1 {
+    font-size: 28px;
+  }
+  .education p {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1180px) {
+  .education h1 {
+    font-size: 30px;
+  }
+  .education p {
+    font-size: 27px;
+  }
+}
+@media (min-width: 1200px) {
+  .education h1 {
+    font-size: 35px;
+  }
+  .education p {
+    font-size: 29px;
+  }
+  .closing h1 {
+    font-size: 33px;
+  }
+}
+@media (min-width: 1260px) {
+  .invitation_sentence {
+    width: 50%;
+    padding-top: 10rem;
+  }
+}
+
+/*  */
+
+@media (max-width: 768px) {
+  .ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .hamburger span {
+    display: block;
+  }
+}

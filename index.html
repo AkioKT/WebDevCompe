@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Pure Collections</title>
+    <link rel="icon" type="image/png" href="Assets/logo.png">
+  </head>
+  <body id="body">
+    <div class="header">
+      <header class="header_1">
+        <a href="" style="display: grid; justify-content: center;"><img src="Assets/logo.png" alt="Logo" class="logo"/></a>
+        <nav class="nav">
+          <ul class="ul" id="navigation">
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="cartpage.html">Cart</a>
+            </li>
+            <li>
+              <a href="exchangepage.html">Exchange</a>
+            </li>
+            <li>
+              <a href="chatpage.html">Chat</a>
+            </li>
+            <li class="register" id="register">
+              <button class="account" id="btnaccount" onclick="signup()">Sign Up | Log in</button>
+            </li>
+            <li class="userprofile"  id="userprofile">
+              <a href="userprofile.html"><img src="Assets/Profile Shop.png" alt=""></a>
+            </li>
+          </ul>
+          <div class="hamburger" onclick="hamburgerbar()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <!-- CONTAINER 1 DELETED -->
+    <div class="limits"></div>
+    
+    <!-- CONTAINER 2 -->
+    <div class="container2">
+      <div class="container2_1">
+        <div class="creator">
+          <img src="Assets/BG Homepage.png" alt="" class="creator1">
+          <div class="education">
+            <h1>WHAT IS</h1>
+            <h1>ECO-FASHION ?</h1>
+            <p>
+              Eco-fashion (or sustainable fashion) is a movement and approach to
+              designing, producing, and consuming clothing in ways that minimize
+              environmental impact and promote ethical practices. It focuses on
+              using sustainable materials, reducing waste, and ensuring fair labor
+              practices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTAINER 2 END -->
+
+    <!-- CONTAINER 3 -->
+    <div class="container3">
+      <div class="container3_1">
+        <h1>Recomended for you</h1>
+        <a href="">More</a>
+      </div>
+
+      <div class="container3_2">
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate1" name="rating1" value="">
+              <label for="loverate1" title=""></label>
+            </div>
+          </div>
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate2" name="rating2" value="">
+              <label for="loverate2" title=""></label>
+            </div>
+          </div>
+          
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate3" name="rating3" value="">
+              <label for="loverate3" title=""></label>
+            </div>
+          </div>
+          
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate4" name="rating4" value="5">
+              <label for="loverate4" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="exchange-container">
+        <div class="exchange-content">
+            <div class="badge">New</div>
+            <h1 class="title">Exchange your item for new one</h1>
+            <a href="exchangepage.html" class="exchange-button">Exchange</a>
+        </div>
+        <div class="background-decoration1"></div>
+        <div class="background-decoration2"></div>
+        <div class="background-decoration3"></div>
+    </div>
+    <!-- CONTAINER 3 END -->
+
+    <!-- CONTAINER 4 -->
+    <div class="container4">
+      <div class="container4_1">
+        <h1>Newsfeed</h1>
+        <a href="">More</a>
+      </div>
+
+      <div class="container4_2">
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate5" name="rating5" value="5">
+              <label for="loverate5" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate6" name="rating6" value="5">
+              <label for="loverate6" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate5" name="rating5" value="5">
+              <label for="loverate5" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate8" name="rating8" value="5">
+              <label for="loverate8" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="container4_2">
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate9" name="rating9" value="5">
+              <label for="loverate9" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate10" name="rating10" value="5">
+              <label for="loverate10" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate11" name="rating11" value="5">
+              <label for="loverate11" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate12" name="rating12" value="5">
+              <label for="loverate12" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <!-- CONTAINER 4 END -->
+
+    <!-- CONTAINER 5 -->
+    <div class="container5">
+      <div class="container5_1">
+        <div class="shopprofile">
+          <img src="Assets/Profile Shop.png" alt="profile">
+          <div class="nameprofile">
+            <h1>Username</h1>
+            <div class="star-rating">
+              <input type="radio" id="star5" name="rating" value="5">
+              <label for="star5" title="Sangat Baik"></label>
+              
+              <input type="radio" id="star4" name="rating" value="4">
+              <label for="star4" title="Baik"></label>
+              
+              <input type="radio" id="star3" name="rating" value="3">
+              <label for="star3" title="Cukup"></label>
+              
+              <input type="radio" id="star2" name="rating" value="2">
+              <label for="star2" title="Kurang"></label>
+              
+              <input type="radio" id="star1" name="rating" value="1">
+              <label for="star1" title="Sangat Kurang"></label>
+            </div>
+          </div>
+        </div>
+        <a href="">View</a>
+      </div>
+
+      <div class="container5_2">
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate13" name="rating13" value="5">
+              <label for="loverate13" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate14" name="rating14" value="5">
+              <label for="loverate14" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate15" name="rating15" value="5">
+              <label for="loverate15" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate16" name="rating16" value="5">
+              <label for="loverate16" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="container5_1">
+        <div class="shopprofile">
+          <img src="Assets/Profile Shop.png" alt="profile">
+          <div class="nameprofile">
+            <h1>Username</h1>
+            <div class="star-rating">
+              <input type="radio" id="star5" name="rating" value="5">
+              <label for="star5" title="Sangat Baik"></label>
+              
+              <input type="radio" id="star4" name="rating" value="4">
+              <label for="star4" title="Baik"></label>
+              
+              <input type="radio" id="star3" name="rating" value="3">
+              <label for="star3" title="Cukup"></label>
+              
+              <input type="radio" id="star2" name="rating" value="2">
+              <label for="star2" title="Kurang"></label>
+              
+              <input type="radio" id="star1" name="rating" value="1">
+              <label for="star1" title="Sangat Kurang"></label>
+            </div>
+          </div>
+        </div>
+        <a href="">View</a>
+      </div>
+
+      <div class="container5_2">
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate13" name="rating13" value="5">
+              <label for="loverate13" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate14" name="rating14" value="5">
+              <label for="loverate14" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate15" name="rating15" value="5">
+              <label for="loverate15" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate16" name="rating16" value="5">
+              <label for="loverate16" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+     <!-- CONTAINER 5 END -->
+
+     <!-- CONTAINER 6 -->
+    <div class="container6">
+      <div class="container6_1">
+        <h1>Spotlight</h1>
+      </div>
+
+      <div class="container6_2">
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate13" name="rating13" value="5">
+              <label for="loverate13" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate14" name="rating14" value="5">
+              <label for="loverate14" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate15" name="rating15" value="5">
+              <label for="loverate15" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+        <div class="shirtcard">
+          <img src="Assets/Baju 2.jpg" alt="" onclick="reviewitem()"/>
+          <div class="groupdescrateclothes">
+            <div> 
+              <p class="clothingbrand">Lorem ipsum dorom</p>
+              <p class="shirtsize">One size</p>
+              <p class="shirtprice">Rp185.000</p>
+            </div>
+            <div class="love-rating">
+              <input type="radio" id="loverate16" name="rating16" value="5">
+              <label for="loverate16" title="Sangat Baik"></label>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="container6_3">
+        <button>Load More...</button>
+      </div>
+    </div>
+     <!-- CONTAINER 6 END -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer1">
+        <div class="footer1_1">
+          <h1>Discover</h1>
+          <a href="">About Eco Fashion</a>
+          <a href="">Carrier</a>
+          <a href="">Terms and Conditions</a>
+          <a href="">Privacy Policy</a>
+        </div>
+        <div class="footer1_1">
+          <h1>About Us</h1>
+          <a href="">Help</a>
+          <a href="">Refund</a>
+          <a href="">Promotion</a>
+          <a href="">Order Status</a>
+        </div>
+        <div class="footer1_1">
+          <h1>Navigation</h1>
+          <a href="#">Home</a>
+          <a href="cartpage.html">Cart</a>
+          <a href="exchangepage.html">Exchange</a>
+          <button onclick="signup()">Sign Up | Log In</button>
+        </div>
+      </div>
+      <div style="padding: 0 1rem;">
+        <div class="linefooter"></div>
+      </div>
+      <div class="footer1_2">
+        <div>
+          <h1>Find Us</h1>
+        </div>
+        <div class="socialmedia">
+          <a href=""><img src="Assets/Whatsapp.png" alt="Whatsapp"></a>
+          <a href=""><img src="Assets/insta.png" alt="Instagram"></a>
+          <a href=""><img src="Assets/x.png" alt="Twitter"></a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>@Copyright 2025 Pure.com</p>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- SIGN PAGE -->
+    <div class="signpage" id="idsignpage">
+      <form class="signpagelayer" id="idsignpagelayer">
+        <div class="btnclose">
+          <button onclick="closesignpage()" 
+          style="padding: 0; 
+                 width: 1rem;
+                 border: none;
+                 font-weight: 300;
+                 font-size: 20px;
+                 background-color: #eaeaea;
+                 ">X</button>
+        </div>
+        <h1>Sign Up</h1>
+        <input type="text" placeholder="Username"> <br>
+        <input type="text" placeholder="Email"> <br>
+        <input type="password" placeholder="Password"> <br>
+        <input type="password" placeholder="Confirm Password"> <br>
+        <button class="signup" style="border: none;" onclick="signupdone()">Sign Up</button>
+        <p>or</p>
+        <button><img src="Assets/google.png" alt=""><p style="padding-top: 0.1rem;">Continue With Google</p></button>
+        <button><img src="Assets/fb.png" alt=""><p style="padding-top: 0.1rem;">Continue With Facebook</p></button>
+        <button><img src="Assets/apple.png" alt="" style="width: 30px;"><p style="padding-top: 0.1rem;">Continue With Apple</p></button>
+        <p style="font-size: 12px;">Sudah punya akun?<a href="#idloginpage" onclick="loginoverlay()">Log in</a></p>
+      </form>
+    </div>
+    <!-- SIGN PAGE END-->
+
+    <!-- LOGIN PAGE -->
+    <div class="loginpage" id="idloginpage">
+      <form class="loginpagelayer" id="idloginpagelayer">
+        <div class="btnclose">
+          <button onclick="closeloginpage()" 
+          style="padding: 0; 
+                 width: 1rem;
+                 border: none;
+                 font-weight: 300;
+                 font-size: 20px;
+                 background-color: #eaeaea;
+                 ">X</button>
+        </div>
+        <h1>Login Up</h1>
+        <input type="text" placeholder="Username" id="username"> <br>
+        <input type="password" placeholder="Password" id="password"> <br>
+        <button type="submit" class="login" style="border: none;" onclick="logindone()">Login</button>
+        <p>or</p>
+        <button><img src="Assets/google.png" alt=""><p style="padding-top: 0.1rem;">Continue With Google</p></button>
+        <button><img src="Assets/fb.png" alt=""><p style="padding-top: 0.1rem;">Continue With Facebook</p></button>
+        <button><img src="Assets/apple.png" alt="" style="width: 30px;"><p style="padding-top: 0.1rem;">Continue With Apple</p></button>
+      </form>
+    </div>
+    <!-- LOGIN PAGE END -->
+  </body>
+</html>
+
+<script>
+  ScrollReveal().reveal(".shirtcard, .exchange-container", {
+    duration: 400, // Waktu animasi (ms)
+    origin: "bottom", // Arah animasi ('top', 'right', 'bottom', 'left')
+    distance: "50px", // Jarak elemen bergerak sebelum muncul
+    easing: "ease-in-out", // Efek transisi
+    delay: 100, // Waktu tunda sebelum animasi dimulai (ms)
+    reset: true, // Jika true, animasi akan terulang saat discroll kembali
+    interval: 70,
+    scale: 0.8,
+  });
+</script>

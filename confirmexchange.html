@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="confirmexchange.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js" defer></script>
+    <title>Pure Collections</title>
+  </head>
+  <body>
+    <div class="header">
+      <header class="header_1">
+        <a href="index.html" style="display: grid; justify-content: center"
+          ><img src="Assets/logo.png" alt="Logo" class="logo"
+        /></a>
+        <nav class="nav">
+          <ul class="ul" id="navigation">
+            <li>
+              <a href="index.html"> Home </a>
+            </li>
+            <li>
+              <a href="cartpage.html"> Cart</a>
+            </li>
+            <li>
+              <a href="exchangepage.html"> Exchange</a>
+            </li>
+            <li>
+              <a href="chatpage.html">Chat</a>
+            </li>
+            <div class="userprofile" id="userprofile">
+              <a href="userprofile.html"
+                ><img src="Assets/Profile Shop.png" alt=""
+              /></a>
+            </div>
+          </ul>
+          <div class="hamburger" onclick="hamburgerbar()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <!-- HEADER END -->
+
+    <div class="limits"></div>
+
+    <!-- CONTAINER 1 -->
+    <div class="container1">
+      <div class="exchangeitem">
+        <div class="exchangeitem1">
+          <img src="Assets/Baju 2.jpg" alt="" class="itemsforexchange" />
+          <div class="arrow1">
+            <button><img src="Assets/Arrow Exchange.png" alt="" /></button>
+          </div>
+          <img src="Assets/Baju 1.jpg" alt="" class="itemsforexchange" />
+        </div>
+        <div class="exchangeitem2">
+          <button onclick="confirmexchange()">Confirm Exchange</button>
+        </div>
+      </div>
+      <div class="descofitem">
+        <div class="descofitem1">
+          <div class="storename">
+            <h1>HorizonStore|Official</h1>
+          </div>
+          <div class="descofitem1_1">
+            <div>
+              <img src="Assets/Baju 2.jpg" alt="" />
+            </div>
+            <div>
+              <p>Brand</p>
+              <p>Size</p>
+              <p>Condition</p>
+              <p>Color</p>
+            </div>
+            <div>
+              <p>&nbsp;: Lorem Ipsum</p>
+              <p>&nbsp;: XL</p>
+              <p>&nbsp;: Good</p>
+              <p>&nbsp;: White</p>
+            </div>
+          </div>
+        </div>
+        <div class="arrow2">
+          <button><img src="Assets/Arrow Exchange.png" alt="" /></button>
+        </div>
+        <div class="descofitem1">
+          <div class="storename">
+            <h1>HorizonStore|Official</h1>
+          </div>
+          <div class="descofitem1_1">
+            <div>
+              <img src="Assets/Baju 1.jpg" alt="" />
+            </div>
+            <div>
+              <p>Brand</p>
+              <p>Size</p>
+              <p>Condition</p>
+              <p>Color</p>
+            </div>
+            <div>
+              <p>&nbsp;: Lorem Ipsum</p>
+              <p>&nbsp;: XL</p>
+              <p>&nbsp;: Good</p>
+              <p>&nbsp;: White</p>
+            </div>
+          </div>
+        </div>
+        <div class="shippingprice">
+          <p>Shipping</p>
+          <p>Rp 10.000</p>
+        </div>
+        <!-- <div class="linefooter"></div> -->
+      </div>
+    </div>
+
+    <!-- SIGN PAGE -->
+    <div class="signpage" id="idsignpage">
+      <form class="signpagelayer" id="idsignpagelayer">
+        <div class="btnclose">
+          <button
+            onclick="closesignpage()"
+            style="
+              padding: 0;
+              width: 1rem;
+              border: none;
+              font-weight: 300;
+              font-size: 20px;
+              background-color: #eaeaea;
+            "
+          >
+            X
+          </button>
+        </div>
+        <h1>Sign Up</h1>
+        <input type="text" placeholder="Username" /> <br />
+        <input type="text" placeholder="Email" /> <br />
+        <input type="password" placeholder="Password" /> <br />
+        <input type="password" placeholder="Confirm Password" /> <br />
+        <button class="signup" style="border: none">Sign Up</button>
+        <p>or</p>
+        <button>
+          <img src="Assets/google.png" alt="" />
+          <p style="padding-top: 0.1rem">Continue With Google</p>
+        </button>
+        <button>
+          <img src="Assets/fb.png" alt="" />
+          <p style="padding-top: 0.1rem">Continue With Facebook</p>
+        </button>
+        <button>
+          <img src="Assets/apple.png" alt="" style="width: 30px" />
+          <p style="padding-top: 0.1rem">Continue With Apple</p>
+        </button>
+        <p style="font-size: 12px">
+          Sudah punya akun?<a href="#idloginpage" onclick="loginoverlay()"
+            >Log in</a
+          >
+        </p>
+      </form>
+    </div>
+    <!-- SIGN PAGE END-->
+
+    <!-- LOGIN PAGE -->
+    <div class="loginpage" id="idloginpage">
+      <form class="loginpagelayer" id="idloginpagelayer">
+        <div class="btnclose">
+          <button
+            onclick="closeloginpage()"
+            style="
+              padding: 0;
+              width: 1rem;
+              border: none;
+              font-weight: 300;
+              font-size: 20px;
+              background-color: #eaeaea;
+            "
+          >
+            X
+          </button>
+        </div>
+        <h1>Login Up</h1>
+        <input type="text" placeholder="Username" /> <br />
+        <input type="password" placeholder="Password" /> <br />
+        <button type="submit" class="login" style="border: none">Login</button>
+        <p>or</p>
+        <button>
+          <img src="Assets/google.png" alt="" />
+          <p style="padding-top: 0.1rem">Continue With Google</p>
+        </button>
+        <button>
+          <img src="Assets/fb.png" alt="" />
+          <p style="padding-top: 0.1rem">Continue With Facebook</p>
+        </button>
+        <button>
+          <img src="Assets/apple.png" alt="" style="width: 30px" />
+          <p style="padding-top: 0.1rem">Continue With Apple</p>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

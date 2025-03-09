@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="userprofile.css  " />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js" defer></script>
+    <title>Pure Collections</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="userprofile">
+          <div>
+            <a href=""><img src="Assets/Profile Shop.png" alt="" /></a>
+          </div>
+          <div style="display: grid">
+            <h1>Username</h1>
+            <button>Change Profile</button>
+          </div>
+        </div>
+        <ul id="navigation">
+          <li><a href="">My Account</a></li>
+          <li><a href="">Dashboard</a></li>
+          <li><a href="">Order History</a></li>
+          <li><a href="">Notification</a></li>
+          <li><a onclick="logout()" id="logout">Logout</a></li>
+        </ul>
+
+        <div class="hamburger" onclick="hamburgerbar()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- CONTAINER -->
+    <div class="container">
+      <div class="profile">
+        <h1>PROFILE</h1>
+        <p>
+          Manage your profile information to control, protect and secure your
+          account
+        </p>
+      </div>
+      <div class="container1">
+        <div class="container1_1">
+          <div class="profilephoto">
+            <img src="Assets/Profile Shop.png" alt="" />
+            <button>Select File</button>
+          </div>
+        </div>
+        <div>
+          <div class="linetable"></div>
+          <div class="profiledesc">
+            <table>
+              <tr>
+                <td class="tableleft">Username</td>
+                <td class="tableright">AkiooKT</td>
+              </tr>
+              <tr>
+                <td class="tableleft">Name</td>
+                <td class="tableright">Galang</td>
+              </tr>
+              <tr>
+                <td class="tableleft">Email</td>
+                <td class="tableright">akioktexample.gmail.com</td>
+              </tr>
+              <tr>
+                <td class="tableleft">Date of Birth</td>
+                <td class="tableright">29 February 2000</td>
+              </tr>
+            </table>
+          </div>
+          <div class="linetable"></div>
+          <div class="storedesc2">
+            <table>
+              <tr>
+                <td class="tableleft">Store name</td>
+                <td class="tableright">AkioStore</td>
+              </tr>
+              <tr>
+                <td class="tableleft">Description</td>
+                <td class="tableright">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                  nihil libero illo aperiam hic placeat ipsa error, modi id
+                  facere numquam? Sequi ducimus nisi adipisci alias eius, natus
+                  eaque quod.
+                </td>
+              </tr>
+              <tr>
+                <td class="tableleft">Address</td>
+                <td class="tableright">Lorem Ipsum</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="confirmprofile">
+        <button onclick="savechange()">Save Changes</button>
+        <a href="index.html">Cancel</a>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <div class="storedesc1">
+  <h1>Store Name</h1>
+  <h1>Description</h1>
+  <h1>Address</h1>
+</div>
+<div class="storedesc2">
+  <p>AkioKT</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <p>
+    Jl. Pangkal Perjuangan By Pass No.KM.1, Tanjungpura, Kec. Karawang
+    Bar., Karawang, Jawa Barat 41316
+  </p>
+</div> -->

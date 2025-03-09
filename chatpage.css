@@ -1,0 +1,529 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Eczar:wght@400..800&family=Hind:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Eczar:wght@400..800&family=Hind:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --maincolor: #f0f0d7;
+  --fonttext: #727d73;
+  --footercolor: #bebea3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--maincolor);
+  color: var(--fonttext);
+  font-family: "Poppins", sans-serif;
+}
+
+.desktop {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+header {
+  background-color: var(--maincolor);
+  padding: 0.3rem 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--fonttext);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--fonttext);
+}
+
+header h1 {
+  font-size: 15px;
+}
+
+svg {
+  width: 2rem;
+}
+
+input[name="search1"] {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: #e5e5cf;
+  border: none;
+  color: var(--fonttext);
+}
+
+.container1 {
+  display: grid;
+  overflow: scroll;
+}
+
+.historychat {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background-color: var(--maincolor);
+  cursor: pointer;
+}
+
+.historychat:active {
+  background-color: #d8d8c6;
+}
+
+.historychat img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.storelogo {
+  display: flex;
+  /* align-items: start; */
+  justify-content: start;
+  gap: 20px;
+}
+
+.storenameandchat {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+}
+
+.storenameandchat h1 {
+  font-size: 12px;
+  color: var(--fonttext);
+}
+.storenameandchat p,
+.timedate p {
+  font-size: 10px;
+  color: var(--fonttext);
+}
+
+.chat {
+  display: none;
+}
+
+.chat header {
+  position: relative;
+}
+
+.chat header button {
+  border: none;
+  color: var(--fonttext);
+  cursor: pointer;
+  background-color: var(--maincolor);
+}
+.chat header img {
+  width: 3rem;
+}
+.chat1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat1 h1 {
+  font-size: 15px;
+}
+.chat p {
+  font-size: 10px;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 700;
+  position: absolute;
+  color: var(--fonttext);
+  right: 20px;
+  top: 10px;
+}
+.menu-button:focus {
+  outline: none;
+}
+
+.allchat {
+  display: grid;
+  gap: 20px;
+  padding: 0.5rem;
+  height: 100%;
+}
+
+.leftchat {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.leftchat img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.rightchat {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.rightchat img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.sellerchat {
+  max-width: 250px;
+  display: grid;
+  gap: 10px;
+  background-color: var(--maincolor);
+  color: var(--fonttext);
+}
+
+.chatbubble {
+  padding: 0.3rem;
+  box-shadow: 0px 2px 3px var(--fonttext);
+}
+
+.chatbubble p {
+  font-size: 10px;
+}
+
+.customerchat {
+  max-width: 250px;
+  display: grid;
+  gap: 10px;
+  /* background-color: var(--fonttext); */
+  color: var(--maincolor);
+}
+
+.customerchat .chatbubble {
+  display: grid;
+  justify-content: end;
+  background-color: var(--fonttext);
+}
+
+.sendchathandphone {
+  background-color: var(--fonttext);
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  position: fixed;
+  bottom: 0;
+}
+.sendchathandphone button {
+  display: grid;
+  align-items: center;
+  padding: 0 0.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--maincolor);
+}
+.sendchathandphone button svg {
+  width: 20px;
+}
+.sendchathandphone input {
+  width: 100%;
+  padding: 0.8rem 0.5rem;
+  border: 1px solid var(--fonttext);
+  outline: none;
+  background: none;
+  color: #ffffff;
+}
+
+.sendchathandphone input:placeholder {
+  color: var(--maincolor);
+}
+
+@media (min-width: 768px) {
+  .handphone {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--maincolor);
+    padding: 0.5rem 1rem;
+  }
+
+  header img {
+    width: 6rem;
+    height: 2.4rem;
+  }
+  nav {
+    display: grid;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding-right: 9px;
+  }
+
+  ul li {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  li img {
+    width: 3.3rem;
+    height: 3.3rem;
+  }
+  a {
+    text-decoration: none;
+    color: var(--fonttext);
+  }
+  li a:hover {
+    color: #202020;
+  }
+  .register a {
+    display: grid;
+  }
+  .historychat {
+    display: flex;
+  }
+
+  .historychat h1 {
+    font-size: 15px;
+    color: var(--fonttext);
+  }
+
+  .historychat p {
+    font-size: 10px;
+    color: var(--fonttext);
+  }
+
+  .historychat img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 3.5px;
+    font-weight: 1000;
+    position: absolute;
+    right: 0;
+    color: var(--fonttext);
+  }
+  .menu-button:focus {
+    outline: none;
+  }
+
+  .allchat {
+    display: grid;
+    gap: 20px;
+    padding: 0.5rem 0.2rem;
+  }
+
+  .container {
+    height: 520px;
+    padding: 0 0 0 1rem;
+    background-color: var(--maincolor);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .containerleft {
+    width: 25vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-right: 1px solid var(--fonttext);
+    overflow: scroll;
+  }
+
+  .searchcontact h1 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  input[name="searchcontact"] {
+    width: 95%;
+    padding: 0.5rem;
+    background-color: #e5e5cf;
+    border: none;
+    color: var(--fonttext);
+  }
+
+  .listchat {
+    display: grid;
+    gap: 10px;
+    /* padding: 0.5rem; */
+  }
+  .historychat {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    padding: 0.3rem;
+    background-color: var(--maincolor);
+  }
+  .historychat h1 {
+    font-size: 10px;
+  }
+  .historychat p {
+    font-size: 9px;
+  }
+  .historychat:hover {
+    background-color: #d3d3c6;
+  }
+
+  .containerright {
+    display: grid;
+    width: 75vw;
+    /* padding: 0 1rem; */
+  }
+
+  .containerright_1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    border-bottom: 1px solid var(--fonttext);
+    padding: 0 0.7rem;
+  }
+
+  .containerright_2 {
+    padding: 0.5rem;
+    overflow: scroll;
+  }
+  .limits {
+    padding-top: 22px;
+  }
+  .containerright_3 {
+    background-color: var(--fonttext);
+    width: 74%;
+    padding: 0 1rem;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .containerright_3 .addfile {
+    display: grid;
+    align-items: center;
+    padding: 0.7rem 0.5rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: var(--maincolor);
+  }
+  .containerright_3 .sendmessage {
+    background-color: var(--fonttext);
+    border: none;
+  }
+  .containerright_3 .sendmessage svg {
+    width: 20px;
+    cursor: pointer;
+    background-color: var(--fonttext);
+  }
+  .containerright_3 input {
+    width: 100%;
+    padding: 0 0.5rem;
+    border: 1px solid var(--fonttext);
+    outline: none;
+    background: none;
+    color: var(--maincolor);
+  }
+  .containerright_3 input::placeholder {
+    color: var(--maincolor);
+  }
+  .descofstore h1 {
+    font-size: 15px;
+    color: var(--fonttext);
+  }
+
+  .descofstore p {
+    font-size: 10px;
+    color: var(--fonttext);
+  }
+
+  .containerright img {
+    width: 3rem;
+  }
+
+  .leftchat {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .leftchat img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .rightchat {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .rightchat img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .sellerchat {
+    max-width: 250px;
+    display: grid;
+    gap: 10px;
+    color: var(--fonttext);
+  }
+
+  .chatbubble {
+    padding: 0.3rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  .chatbubble p {
+    font-size: 12px;
+  }
+
+  .customerchat {
+    max-width: 250px;
+    /* background-color: var(--fonttext); */
+    color: var(--maincolor);
+    display: grid;
+    gap: 10px;
+    color: var(--maincolor);
+  }
+
+  .customerchat .chatbubble {
+    display: grid;
+    /* background-color: var(--fonttext); */
+    justify-content: end;
+  }
+}
+
+@media (min-width: 850px) {
+  .historychat h1 {
+    font-size: 13px;
+  }
+  .historychat p {
+    font-size: 11px;
+  }
+}
