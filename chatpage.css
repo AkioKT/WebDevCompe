@@ -210,6 +210,11 @@ input[name="search1"] {
   background-color: var(--fonttext);
 }
 
+.timetosendandreceivemessages {
+  display: grid;
+  justify-content: end;
+}
+
 .sendchathandphone {
   background-color: var(--fonttext);
   width: 100%;
@@ -495,11 +500,13 @@ input[name="search1"] {
   }
 
   .chatbubble {
-    padding: 0.3rem;
+    display: grid;
+    padding: 0 0.3rem;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
   }
 
-  .chatbubble p {
+  .chatbubble p,
+  .timetosendandreceivemessages {
     font-size: 12px;
   }
 
