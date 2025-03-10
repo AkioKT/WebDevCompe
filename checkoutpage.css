@@ -39,7 +39,7 @@ body {
 }
 
 .header_1 .logo {
-  width: 4.5rem;
+  width: 4rem;
 }
 
 .nav {
@@ -242,7 +242,7 @@ select {
 }
 
 .limits {
-  padding-bottom: 60px;
+  padding-bottom: 55px;
 }
 
 .linefooter,
@@ -277,7 +277,7 @@ select {
 .descofitems1 p,
 .totalproduct1 p,
 .changebiodata a {
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .totalproduct1 h1,
@@ -287,7 +287,7 @@ select {
 .payment1 h1,
 .storename h1,
 .voucher1 h1 {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .customerbiodata1 {
@@ -712,6 +712,28 @@ option {
     display: block;
     justify-content: center;
     align-items: center;
+  }
+  .customerbiodata h1,
+  .customerbiodata p,
+  .customerbiodata a,
+  .expeditionname p,
+  .priceshipping p,
+  .priceshipping a,
+  .voucher2 p,
+  .voucher2 a,
+  .descofitems1 p,
+  .totalproduct1 p {
+    font-size: 15px;
+  }
+
+  .totalproduct1 h1,
+  .descofitems1 h1,
+  .message h1,
+  .expeditionname h1,
+  .payment1 h1,
+  .storename h1,
+  .voucher1 h1 {
+    font-size: 17px;
   }
   .header_1 {
     padding: 0 1rem;
