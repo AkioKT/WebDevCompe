@@ -61,7 +61,7 @@ input[name="search1"] {
 
 .container1 {
   display: grid;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .historychat {
@@ -356,7 +356,7 @@ input[name="search1"] {
     flex-direction: column;
     gap: 10px;
     border-right: 1px solid var(--fonttext);
-    overflow: scroll;
+    overflow-y: scroll;
   }
 
   .searchcontact h1 {
@@ -411,7 +411,7 @@ input[name="search1"] {
 
   .containerright_2 {
     padding: 0.5rem;
-    overflow: scroll;
+    overflow-y: scroll;
   }
   .limits {
     padding-top: 22px;
