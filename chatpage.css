@@ -242,7 +242,7 @@ input[name="search1"] {
   color: #ffffff;
 }
 
-.sendchathandphone input:placeholder {
+.sendchathandphone input::placeholder {
   color: var(--maincolor);
 }
 
