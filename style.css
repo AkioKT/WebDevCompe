@@ -273,11 +273,10 @@ button:hover {
 }
 
 .love-rating {
-  display: flex;
+  height: 1.5em;
+  display: grid;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  margin-bottom: 20px;
-  margin-left: 2px;
 }
 
 .love-rating input {
@@ -335,6 +334,7 @@ button:hover {
   padding: 4rem 1rem;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .badge {
