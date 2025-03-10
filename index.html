@@ -665,6 +665,16 @@
 </html>
 
 <script>
+  ScrollReveal().reveal(".shirtcard, .exchange-container", {
+    duration: 450, // Durasi animasi (ms)
+    scale: 0.5, // Skala awal sebelum muncul (0.5 berarti 50% ukuran normal)
+    origin: "bottom", // Efek masuk dari bawah (opsional)
+    distance: "50px", // Jarak gerakan elemen (opsional)
+    easing: "ease-in-out", // Efek pergerakan lebih halus
+    interval: 70,
+    reset: true, // Jika true, animasi akan terjadi setiap kali elemen masuk viewport
+  });
+
   document.addEventListener("DOMContentLoaded", function () {
     let lastChecked = null;
 
