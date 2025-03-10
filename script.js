@@ -216,6 +216,7 @@ function checkout() {
     }
   });
 }
+
 // BUY (REVIEWPRODUCT.HTML)
 function buy() {
   window.location.href = "checkoutpage.html";
