@@ -1,3 +1,5 @@
+import ScrollReveal from "scrollreveal";
+
 // HAMBURGER BAR
 const hamburger = document.querySelector(".hamburger");
 const navigation = document.getElementById("navigation");
@@ -154,7 +156,6 @@ function savechange() {
     background: "#f0f0d7",
     cancelButtonColor: "#d33",
   }).then((result) => {
-    /* Read more about isConfirmed, isDenied below */
     if (result.isConfirmed) {
       Swal.fire({
         title: "Saved!",
@@ -168,9 +169,9 @@ function savechange() {
 // LOGOUT BUTTON (USER PROFILE.HTML)
 function logout() {
   Swal.fire({
-    title: "Are you sure?",
+    title: "Are you sure to logout?",
     showDenyButton: true,
-    confirmButtonText: "Yes", // Pastikan teks sesuai
+    confirmButtonText: "Yes",
     denyButtonText: "Cancel",
     background: "#f0f0d7",
   }).then((result) => {
@@ -231,3 +232,13 @@ function backchat() {
   document.querySelector(".container").setAttribute("style", "display: block;");
   document.querySelector(".chat").setAttribute("style", "display: none;");
 }
+// SCROLL REVEAL (INDEX.HTML)
+ScrollReveal().reveal(".shirtcard, .exchange-container", {
+  duration: 400, // Durasi animasi (ms)
+  scale: 0.5, // Skala awal sebelum muncul (0.5 berarti 50% ukuran normal)
+  origin: "bottom", // Efek masuk dari bawah (opsional)
+  distance: "50px", // Jarak gerakan elemen (opsional)
+  easing: "ease-in-out", // Efek pergerakan lebih halus
+  interval: 70,
+  reset: true, // Jika true, animasi akan terjadi setiap kali elemen masuk viewport
+});
