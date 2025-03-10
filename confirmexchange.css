@@ -38,7 +38,7 @@ body {
 }
 
 .header_1 .logo {
-  width: 7rem;
+  width: 4rem;
 }
 
 .nav {
@@ -695,6 +695,9 @@ footer {
   }
   .header_1 {
     padding: 0 1rem;
+  }
+  .header_1 .logo {
+    width: 6rem;
   }
   .ul li {
     padding: 1rem 0 1rem 1rem;
