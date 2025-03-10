@@ -403,8 +403,8 @@
               <p class="shirtprice">Rp185.000</p>
             </div>
             <div class="love-rating">
-              <input type="radio" id="loverate13" name="rating13" value="5" />
-              <label for="loverate13" title="Sangat Baik"></label>
+              <input type="radio" id="loverate17" name="rating17" value="5" />
+              <label for="loverate17" title="Sangat Baik"></label>
             </div>
           </div>
         </div>
@@ -417,8 +417,8 @@
               <p class="shirtprice">Rp185.000</p>
             </div>
             <div class="love-rating">
-              <input type="radio" id="loverate14" name="rating14" value="5" />
-              <label for="loverate14" title="Sangat Baik"></label>
+              <input type="radio" id="loverate18" name="rating18" value="5" />
+              <label for="loverate18" title="Sangat Baik"></label>
             </div>
           </div>
         </div>
@@ -431,8 +431,8 @@
               <p class="shirtprice">Rp185.000</p>
             </div>
             <div class="love-rating">
-              <input type="radio" id="loverate15" name="rating15" value="5" />
-              <label for="loverate15" title="Sangat Baik"></label>
+              <input type="radio" id="loverate19" name="rating19" value="5" />
+              <label for="loverate19" title="Sangat Baik"></label>
             </div>
           </div>
         </div>
@@ -445,8 +445,8 @@
               <p class="shirtprice">Rp185.000</p>
             </div>
             <div class="love-rating">
-              <input type="radio" id="loverate16" name="rating16" value="5" />
-              <label for="loverate16" title="Sangat Baik"></label>
+              <input type="radio" id="loverate20" name="rating20" value="5" />
+              <label for="loverate20" title="Sangat Baik"></label>
             </div>
           </div>
         </div>
@@ -470,8 +470,8 @@
               <p class="shirtprice">Rp185.000</p>
             </div>
             <div class="love-rating">
-              <input type="radio" id="loverate13" name="rating13" value="5" />
-              <label for="loverate13" title="Sangat Baik"></label>
+              <input type="radio" id="loverate21" name="rating21" value="5" />
+              <label for="loverate21" title="Sangat Baik"></label>
             </div>
           </div>
         </div>
@@ -484,8 +484,8 @@
               <p class="shirtprice">Rp185.000</p>
             </div>
             <div class="love-rating">
-              <input type="radio" id="loverate14" name="rating14" value="5" />
-              <label for="loverate14" title="Sangat Baik"></label>
+              <input type="radio" id="loverate22" name="rating23" value="5" />
+              <label for="loverate24" title="Sangat Baik"></label>
             </div>
           </div>
         </div>
@@ -498,8 +498,8 @@
               <p class="shirtprice">Rp185.000</p>
             </div>
             <div class="love-rating">
-              <input type="radio" id="loverate15" name="rating15" value="5" />
-              <label for="loverate15" title="Sangat Baik"></label>
+              <input type="radio" id="loverate25" name="rating25" value="5" />
+              <label for="loverate25" title="Sangat Baik"></label>
             </div>
           </div>
         </div>
@@ -512,8 +512,8 @@
               <p class="shirtprice">Rp185.000</p>
             </div>
             <div class="love-rating">
-              <input type="radio" id="loverate16" name="rating16" value="5" />
-              <label for="loverate16" title="Sangat Baik"></label>
+              <input type="radio" id="loverate26" name="rating26" value="5" />
+              <label for="loverate26" title="Sangat Baik"></label>
             </div>
           </div>
         </div>
@@ -674,5 +674,19 @@
     reset: true, // Jika true, animasi akan terulang saat discroll kembali
     interval: 70,
     scale: 0.8,
+  });
+  document.addEventListener("DOMContentLoaded", function () {
+    let lastChecked = null;
+
+    document.querySelectorAll(".love-rating input").forEach((radio) => {
+      radio.addEventListener("click", function (e) {
+        if (lastChecked === this) {
+          this.checked = false;
+          lastChecked = null;
+        } else {
+          lastChecked = this;
+        }
+      });
+    });
   });
 </script>
